@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Fe1 {
+	public static void main(String[] args){
+		Scanner cin = new Scanner(System.in);//读入数据
+		int a = 1, b = 1, ans = 1, c = cin.nextInt();//c为读入的数据
+		int d = 0;
+		/*for(int i = 1; i <= c - 2; i++){
+			ans = (a + b) % 10007;
+			a = b;
+			b = ans;
+			System.out.println(a);
+		} //这一整套就是斐波那契数列
+		*/
+		System.out.print(a+" "+b+" ");
+		for(int i = 1; i <= c - 2; i++){
+			d = a + b;
+			a = b;
+			b = d;
+			System.out.print(d + " ");
+		} 
+	}
+}
